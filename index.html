@@ -1,0 +1,266 @@
+.
+HTML
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>احمد مستجاب | طراحی سایت</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background: #080b1a;
+  color: white;
+  min-height: 100vh;
+}
+
+header {
+  padding: 25px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-bottom: 1px solid #242b48;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #62e6ff;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #62e6ff;
+}
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  background: radial-gradient(circle, #182b58, #080b1a 70%);
+}
+
+.badge {
+  border: 1px solid #62e6ff;
+  color: #62e6ff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: clamp(32px, 7vw, 60px);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: #62e6ff;
+  text-shadow: 0 0 25px #1686ff;
+}
+
+.description {
+  max-width: 600px;
+  color: #b8c2df;
+  font-size: 16px;
+  line-height: 2.2;
+  margin-bottom: 30px;
+}.
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #62e6ff;
+  color: #080b1a;
+  box-shadow: 0 0 25px #1686ff55;
+}
+
+.secondary {
+  border: 1px solid #62e6ff;
+  color: #62e6ff;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+}
+
+.services {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  color: #b8c2df;
+  line-height: 2;
+  margin-bottom: 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: linear-gradient(145deg, #151d38, #0c1125);
+  border: 1px solid #283657;
+  border-radius: 18px;
+  padding: 30px 22px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #62e6ff;
+  box-shadow: 0 12px 35px #1686ff22;
+}
+
+.icon {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+.card h3 {
+  color: #62e6ff;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #b8c2df;
+  line-height: 2;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  border-top: 1px solid #242b48;
+  color: #b8c2df;
+  line-height: 2;
+}
+
+@media (max-width: 600px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}
+</style>HTML
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">احمد مستجاب</div>
+  <nav>
+    <a href="#home">خانه</a>
+    <a href="#services">خدمات</a>
+    <a href="#contact">تماس با من</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="badge">طراحی سایت و دیجیتال مارکتینگ</div>
+
+    <h1>به دنیای <span>سه‌بعدی</span> من خوش آمدید</h1>
+
+    <p class="description">
+      من احمد مستجاب هستم.
+      در زمینه طراحی وب‌سایت، طراحی رابط کاربری،
+      طراحی لوگو و دیجیتال مارکتینگ فعالیت می‌کنم.
+      هدف من ساخت تجربه‌هایی زیبا، مدرن و متفاوت است.
+    </p>
+
+    <div class="buttons">
+      <a class="button primary" href="#services">مشاهده خدمات</a>
+      <a class="button secondary" href="#contact">ارتباط با من</a>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>خدمات من</h2>
+
+    <p class="section-description">
+      ایده‌های شما را به تجربه‌های دیجیتال تبدیل می‌کنم.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="icon">🌐</div>
+        <h3>طراحی وب‌سایت</h3>
+        <p>طراحی وب‌سایت‌های مدرن و واکنش‌گرا برای موبایل و کامپیوتر.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🎨</div>
+        <h3>طراحی لوگو</h3>
+        <p>طراحی هویت بصری جذاب و حرفه‌ای متناسب با برند شما.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🚀</div>
+        <h3>دیجیتال مارکتینگ</h3>
+        <p>کمک به معرفی کسب‌وکار و توسعه حضور آنلاین برند شما.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <p>برای همکاری و ارتباط با من آماده‌ام.</p>
+  <p>© 2026 احمد مستجاب | تمامی حقوق محفوظ است.</p>
+</footer>
+
+</body>
+</html>
